@@ -5,11 +5,11 @@
 var app = angular.module('Bitocracy', ['ionic'])
 
   .run(function ($ionicPlatform, $window) {
-    $ionicPlatform.ready(function () {
-      if ($window.StatusBar) {
-        StatusBar.styleDefault();
-      }
-    });
+    //$ionicPlatform.ready(function () {
+    //  if ($window.StatusBar) {
+    //    StatusBar.styleDefault();
+    //  }
+    //});
   })
 
   .config(function ($stateProvider, $urlRouterProvider) {
