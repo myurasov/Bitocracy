@@ -1,0 +1,80 @@
+@import "ionic/variables";
+@import "ionic/ionic.app";
+
+.tokenCard {
+  .tokens {
+    font-size: 75px;
+    text-align: center;
+    color: $assertive;
+    padding-left: 10px;
+    margin-top: 20px;
+
+    .tokensAnnotation {
+      font-size: 16px;
+      margin-top: 25px;
+    }
+  }
+}
+
+.projectDetails {
+  ion-content {
+    padding: 30px;
+  }
+
+  .tokens {
+    font-size: 75px;
+    text-align: center;
+    color: $assertive;
+    padding-left: 10px;
+
+    .plusMinus {
+      font-size: 50%;
+      display: inline-block;
+      vertical-align: 14px;
+      margin-left: 20px;
+
+      &:first-of-type {
+        margin-left: 0px;
+        margin-right: 20px;
+      }
+    }
+
+    .tokensAnnotation {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  }
+
+  .options {
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    .radio-icon {
+      color: $royal;
+    }
+
+    .item {
+      font-size: 27px;
+      &:first-line {
+        line-height: 45px;
+      }
+    }
+  }
+
+  .button {
+    min-width: 200px;
+  }
+}
+
+.powered {
+  margin-top: 70px;
+  color: gray;
+}
+
+.sent .item {
+  font-size: 300%;
+  padding: 50px;
+  line-height: 1.5;
+  text-align: center;
+  color: $assertive;
+}

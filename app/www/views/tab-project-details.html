@@ -1,0 +1,47 @@
+<ion-view title="Project Details" class="projectDetails">
+
+  <ion-content class="" ng-show="!sent">
+
+    <br>
+
+    <div class="row">
+      <div class="col-80 col-center">
+        <h1>{{ project.title }}</h1>
+      </div>
+      <div class="col-20 col-center tokens">
+        <span class="plusMinus" ng-click="dec()">-</span>{{ project.tokens }}<span class="plusMinus"
+                                                                                   ng-click="inc()">+</span>
+        <div class="tokensAnnotation">
+          satoshi<span ng-if="project.tokens != 1">s</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card options">
+      <div class="item item-text-wrap">
+        Available voting options:<br><br>
+        <ion-radio ng-model="choice" ng-value="option" ng-repeat="option in project.options">{{ option }}</ion-radio>
+      </div>
+    </div>
+
+
+    <div class="row"><div class="col text-center">
+      <button class="button button-large button-royal" ng-click="vote()">
+        Vote!
+      </button>
+    </div></div>
+
+  </ion-content>
+
+  <ion-content ng-show="sent">
+
+    <div class="card sent">
+      <div class="item item-text-wrap">
+        Your Satoshi token<span ng-if="project.tokens != 1">s</span><br>had been succesfully sent!
+      </div>
+    </div>
+
+
+  </ion-content>
+
+</ion-view>

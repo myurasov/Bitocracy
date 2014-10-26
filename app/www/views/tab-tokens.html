@@ -1,0 +1,23 @@
+<ion-view title="My Tokens">
+
+  <ion-content class="">
+
+    <div class="row">
+      <div class="col">
+        <ng-include src="'views/inc/tokens-card.html'" ng-repeat="item in projects" ng-hide="$odd"></ng-include>
+      </div>
+      <div class="col">
+        <ng-include src="'views/inc/tokens-card.html'" ng-repeat="item in projects" ng-hide="$even"></ng-include>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col text-center powered">
+        Direct democracy meets real security.
+        Powered by Bitcoin.
+      </div>
+    </div>
+
+  </ion-content>
+
+</ion-view>
